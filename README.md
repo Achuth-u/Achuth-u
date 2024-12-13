@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Achuth-u
-- 👀 I’m interested in ...coding
+- 👀 I’m interested in ... programming,machine learning,Ai,
 - 🌱 I’m currently learning ...btech cse
 
 <!---
