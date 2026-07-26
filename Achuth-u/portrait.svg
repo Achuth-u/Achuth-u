@@ -1,80 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 357 432" width="357" height="432">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 398" width="384" height="398">
   <defs>
     <style>
       @keyframes revealDown {
         from { height: 0; }
-        to   { height: 432px; }
+        to   { height: 398px; }
       }
-      @keyframes subtleGlow {
-        0%, 100% { opacity: .92; }
-        50%       { opacity: 1; }
+      @keyframes cyberPulse {
+        0%, 100% { opacity: .88; }
+        50%       { opacity: 1.0; }
       }
       .ascii {
-        font-family: 'Courier New', Consolas, monospace;
-        font-size: 8px;
+        font-family: "Courier New", Consolas, "Fira Code", monospace;
+        font-size: 7.5px;
         font-weight: 700;
         fill: #3BA8FF;
-        letter-spacing: .6px;
-        animation: subtleGlow 3.5s ease-in-out infinite;
+        letter-spacing: .5px;
+        animation: cyberPulse 4s ease-in-out infinite;
       }
     </style>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation=".6" result="b"/>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation=".5" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <clipPath id="rev">
-      <rect x="0" y="0" width="357" height="0">
-        <animate attributeName="height" from="0" to="432"
-                 dur="2s" fill="freeze"
-                 calcMode="spline" keySplines="0.22 1 0.36 1"/>
+      <rect x="0" y="0" width="384" height="0">
+        <animate attributeName="height"
+                 from="0" to="398"
+                 dur="2.2s" fill="freeze"
+                 calcMode="spline"
+                 keySplines="0.2 1 0.3 1"/>
       </rect>
     </clipPath>
   </defs>
   <g clip-path="url(#rev)" filter="url(#glow)">
     <text class="ascii" xml:space="preserve">
-    <tspan x="10" y="14">                                                                    </tspan>
-    <tspan x="10" y="23">                             .                                      </tspan>
-    <tspan x="10" y="33">                                                                    </tspan>
-    <tspan x="10" y="42">                           X@, ; x@@    .,                          </tspan>
-    <tspan x="10" y="52">                           @@@@@@@@@@@@@O@@@ #                      </tspan>
-    <tspan x="10" y="61">                    O@@@@@@@X,*@O@:+@@@@@@@@@@@#@@                  </tspan>
-    <tspan x="10" y="71">                 @@@@#@@@~O*O@@@X@@X~: +*@@@O@@@O@                  </tspan>
-    <tspan x="10" y="80">                @@@@@x#@:XxO+#*@x @@@#@@;.+O@#@O @@@                </tspan>
-    <tspan x="10" y="90">              *@@*+,+@: @@+~~x#@*x  *O@@XO +  ~@@@@@@               </tspan>
-    <tspan x="10" y="99">           . #@@@#x~#Ox+@#~@@@O*@@@@~@O;@@@@@@~;@:~x@@              </tspan>
-    <tspan x="10" y="109">              @@*x@@@X@@@@@@@@@@@@@@@*O@@@@@@@@,#O*@@+              </tspan>
-    <tspan x="10" y="118">             @@@Ox~@@X@@,.          @@@x@ *.;@@O@X@@@  .            </tspan>
-    <tspan x="10" y="128">             @@@x@@*X@@    ,;~;      ;xX@#,  ;#@@+#@@               </tspan>
-    <tspan x="10" y="137">               @@#X+@@.         ~X@@           X@@X@@               </tspan>
-    <tspan x="10" y="147">               @@@@@@                 ;+;*x     @@@+                </tspan>
-    <tspan x="10" y="156">                +@@@@  ~@@@@@@@@@x*@@@@@@@@@@X  @@X:                </tspan>
-    <tspan x="10" y="166">                 @ @~ O@@@.O@  @@+ @@@  @*@@@@x @# @                </tspan>
-    <tspan x="10" y="175">                 @ @  ~~X@@@@@@X  .  X@#xxX~  : @@ @                </tspan>
-    <tspan x="10" y="185">                 @@@ .~        +,   *#+       O @@@:                </tspan>
-    <tspan x="10" y="194">                 ,#@x ;.      # ,   ,       ,~O.@@X                 </tspan>
-    <tspan x="10" y="204">                   @x;+;       O@@@@@#      ..+~                    </tspan>
-    <tspan x="10" y="213">                     @;~+,:@@@@@@@OO@@@@@@+,::@O                    </tspan>
-    <tspan x="10" y="223">                     @O,+. @@@@*     X@  @ .+*@                     </tspan>
-    <tspan x="10" y="232">                      @* .     .@@@@O      ,.@                      </tspan>
-    <tspan x="10" y="242">                       @X:,              ~OX@@                      </tspan>
-    <tspan x="10" y="251">                ..   ~X@@@@@@          +@@@@@@ @;     ..            </tspan>
-    <tspan x="10" y="261">            .       @@ ;@ X@@@@@@@@@@@@@@@;+@  @@@X        ..       </tspan>
-    <tspan x="10" y="270">       ..        ~@@@@  @@  .O@@@@@@@@@@  *@   @@@@@@@:          .  </tspan>
-    <tspan x="10" y="280">  ..        :@@@@@@O+@   X@+  :,:  ;X*.  @#    @@Xx#@@@@@@@+        </tspan>
-    <tspan x="10" y="289">        x@@@@@@O*~+*~@@    @@:   ~+:  ,@@  .: @@x##Xx+~XX@@@@@@@O   </tspan>
-    <tspan x="10" y="299">   X@@@@@@@OXO..**~X@@@     :@@X    *@@;   +  @OX#OOOx+@#xxxXO@@@@@@</tspan>
-    <tspan x="10" y="308">@@@@@@#Xxx*xX@@@O+@@#X@x   @   @@*+@@   *@*  #@xOXxx#@@O*xXXXXOXxX#@</tspan>
-    <tspan x="10" y="318">@@XxOXXXXxxx**O@@OXXO#@@  @@,*  @@@@    .,#  @@OXOOXxx*xXXxXxXOOO#OO</tspan>
-    <tspan x="10" y="327">X####XO#OXX#@;+~xXX*X#O@ ~        @@@ ,@~    @O#OxX#OxX~@#x@xOOXXXX#</tspan>
-    <tspan x="10" y="337">+OxXOxxXX*X*@X*XxXX*X#O@.         x@  X:    O@*OxXOxxxXx@~XX+*xxXxx#</tspan>
-    <tspan x="10" y="346">+XxXOxXOXxOxx@++xxxxX#O@@                 : @@XOOXXxOX+@xxxxXXxxXxXO</tspan>
-    <tspan x="10" y="356">xXOxXxx*xXXX+#@:XXXXxX##@       .           @*OxXOxO#~##xXxx*XXXXxxx</tspan>
-    <tspan x="10" y="365">xx*xXXOX*XXXx*@#+x*Xx*@X@@      O :      . @@*@Xxxxx~x@~xx*XOX*x**+X</tspan>
-    <tspan x="10" y="375">xx*x*xXXXOxXX*X@xx*xXxX#@@      ~        . @@XXxXXOO*@x**x~*xx*x+~xO</tspan>
-    <tspan x="10" y="384">O+**xx*x**XX**+*@;*xx*xO+@;    .:    .    *@*xxxXXO+@X+XXOx+~*~+~~*x</tspan>
-    <tspan x="10" y="394">@*+XXXxXx*xxxx*+@@~Oxxx@X@@    ,,         @@xOOXXx+@@*XXxx**xx+;++;@</tspan>
-    <tspan x="10" y="403">O@;+*xxOXXXXXxXX*@x~XxX@OO@    ,,        ,@XXXXXX*#@~XXx**+*****;+O@</tspan>
-    <tspan x="10" y="413">;@Oxx*+xxxXxx*x*~+@**x~+x~@@         .   @@xOxxXx*@;*XXOO@#@@@@@#@@@</tspan>
+    <tspan x="10" y="14">                                                                                </tspan>
+    <tspan x="10" y="22">                                                                                </tspan>
+    <tspan x="10" y="31">                                                                                </tspan>
+    <tspan x="10" y="40">                               ..   .'.,:,'..  .'..                             </tspan>
+    <tspan x="10" y="49">                              ,:~++~~;~+**+:,'';:;;,' ..                        </tspan>
+    <tspan x="10" y="58">                       ..'....~+**x*xxxxxxXx*+**+*Xx+;;:,'',                    </tspan>
+    <tspan x="10" y="66">                   ..,;~~*++**x*x**xXx*x**x***xXOXXxxx++~+~*:.                  </tspan>
+    <tspan x="10" y="75">                 '::~~~+*xxx++**xXXOOxxXXx+*+++*xxXxXxxXx*+~+:.                 </tspan>
+    <tspan x="10" y="84">               .';+*++x**Xx++*+*+xXXXOx*XXOXxXxX***xxXXOXX++*~~:                </tspan>
+    <tspan x="10" y="93">              ';*x**x**x*xxxOX*xxxxxXX+***XXXXOXX*x+x*++xX*xXxx*,               </tspan>
+    <tspan x="10" y="102">             ,~*xx*x+*xOX+*XXx***XXOXXXX***xXXXxxXX*Xxxx**XxxXx+~:              </tspan>
+    <tspan x="10" y="110">             ;~*XOxx*Xxx*xxxX**XXXx**xXXXOOxXX+xOOOXXXxX**xX***x*;.             </tspan>
+    <tspan x="10" y="119">             '*Xx*xXXXXXXOXx+x*+~++**+*+*xX*+*+xxxx**xxXX**xxxXx*:              </tspan>
+    <tspan x="10" y="128">            .;~*X***xXXxxx~;::::::::,,,,,,;**+~~+;;;;;+xxxXXxOO**,              </tspan>
+    <tspan x="10" y="137">            .;+xxxXXxxxxx~:,''''''''..  ...',::;;;:,,,:~+xXXxOx*:               </tspan>
+    <tspan x="10" y="146">             .;+xXXXXxXx~:,''.''''''''''''''''''','''',:~*XOXxXx:               </tspan>
+    <tspan x="10" y="154">               ;*XXXOXX+:''.'....     .....    ..'''.'',,;xXOxx~.               </tspan>
+    <tspan x="10" y="163">               ,~xXOOOx,''',;~++++*+~:'...':+xxx***+;:,',,xOXx~                 </tspan>
+    <tspan x="10" y="172">                 ~+xXX+''';~++*xxXxx**~,,:+xxx*xxxxx+~;;,,*Xx~~'                </tspan>
+    <tspan x="10" y="181">                 ,;,~X:',:;+*x;xxx:+**~:':~**+;+x*~*+~;::,~X+,;:                </tspan>
+    <tspan x="10" y="190">                 ':';x'',,:;;~;~~~~~~;,''',:~~~;;;;;::,,,,:X~::'                </tspan>
+    <tspan x="10" y="198">                  :~+*',,,'',,,,,,,,::,'.'::;:,,,,'''..',,:X++;                 </tspan>
+    <tspan x="10" y="207">                  :;~x,,,,'.......'::,'. .,,,:,'.   .'',::~x;;'                 </tspan>
+    <tspan x="10" y="216">                   ,;*::::,'..  ..,::+~;::+~;:,'.  ..',:;:~~;'                  </tspan>
+    <tspan x="10" y="225">                    ',:;;;:,'..',::;*XOO*xOOX*++~;,,,,:;~~.                     </tspan>
+    <tspan x="10" y="234">                      .;~;;:::~xXXXOOOX*~~+xOOOOOO*::;;~~;                      </tspan>
+    <tspan x="10" y="242">                       :;;;;:::**~*++~::,,,~~++~;+;::;~~~'                      </tspan>
+    <tspan x="10" y="251">                        ;;;;;::,,,,::;~+*+~;::,,,,::;;~~,                       </tspan>
+    <tspan x="10" y="260">                         ~~~;;::,'''..''''.'.',,,:~~~~+~.                       </tspan>
+    <tspan x="10" y="269">                        ':++++~~;,''..     .',,:;~+***+~,+.                     </tspan>
+    <tspan x="10" y="278">                      .~*';~+*xxx*+;;;::,:::~~+*xxx*+~;,.+X~,                   </tspan>
+    <tspan x="10" y="286">                    '~xO;.:;:;;+*xXXXXXXOOOOOOXxx+~;;;,..;Oxxx;'                </tspan>
+    <tspan x="10" y="295">               .,:~*xxxX;. ,;:,::~+********xxx*+;::;;...'+XXXXXxx*~;,'          </tspan>
+    <tspan x="10" y="304">          .,;~*xx**x*xxx+.. ';;:,:;;~~~~~~++++;:,:~, ..':xXXXXXxxxXxxxx*~:,.    </tspan>
+    <tspan x="10" y="313">     ',:~*xxxxXx*******xx,..  ,~;:,:::;;;;;;:::;+;  ...'+xXXXXxxxxxXxxxxxxxx*+~:</tspan>
+    <tspan x="10" y="322">':;+*xxxxxxxxx********xxx;...   :*+;:::::::::~+;'  ....:xxxxxxxxx***XxxxxxXXxxxx</tspan>
+    <tspan x="10" y="330">xXXXXXXxxxxxXXx*+***xxXxx*' .. .,.:+*+~;;;~*~,..','...'+xxxxxxxxxxxXXxxxxxxxxxXx</tspan>
+    <tspan x="10" y="339">XXXXXXxxxxxxxxxXXx*xxxxxx*;  .,,,''.;+++***;....',,'.':*xxxxxxxxxxxxxxxxxxxxxXXx</tspan>
+    <tspan x="10" y="348">XXXxxxxxxxxxx****xx*xxxXXx+'.',,'.''':;+xx+:....'.''''~xxxxxxxxx****xxxxxxxxxxxx</tspan>
+    <tspan x="10" y="357">XXxxxxxxxxxXx**+*****xxXXxx,,'........':*x+;'''''...,,xxxxxxxxxx***x*xXxxxxxxxxx</tspan>
+    <tspan x="10" y="366">xxxxxxx**xxxX**+*****xxxXXx~''......   .:*~''''....'';xxxxxxxx*****xxX**x*******</tspan>
+    <tspan x="10" y="374">xxx*xxxxxxxxXX*+++****xxXXx*''.......    ''. '... .''+xxxxxxx*******Xx**********</tspan>
+    <tspan x="10" y="383">*x*x****xx*xxXx++*****xxxXxx:'........ ...   .....'',xxxxxxxx**x***xx***********</tspan>
     </text>
   </g>
 </svg>
